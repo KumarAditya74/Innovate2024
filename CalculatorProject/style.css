@@ -1,0 +1,98 @@
+body {
+    font-family: Arial, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    
+    background: linear-gradient(to bottom right, #61c0bf, #0088a9);
+  }
+  
+  .container {
+    text-align: center;
+  }
+  
+  .calculator {
+    width: 60%;
+    max-width: 400px;
+    height: auto;
+    border-radius: 10px;
+    overflow: hidden;
+    background: rgba(255, 255, 255, 0.2);
+    backdrop-filter: blur(10px);
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1), 0 1px 3px rgba(0, 0, 0, 0.08);
+    animation: fadeInUp 1.5s ease forwards;
+    padding: 10px;
+  }
+  .calculator input{
+    width: calc(100% - 20px);
+    height: 40px;
+    margin-bottom: 10px;
+    padding: 5px;
+    font-size: 1.5rem;
+    text-align: center; /* Center text alignment */
+    border: none;
+    border-radius: 5px;
+    background: rgba(255, 255, 255, 0.1);
+    backdrop-filter: blur(10px);
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1), 0 1px 3px rgba(0, 0, 0, 0.08);
+  }
+  
+  .display {
+    width: calc(100% - 20px);
+    height: 40px;
+    margin-bottom: 10px;
+    padding: 5px;
+    font-size: 1.5rem;
+    text-align: right;
+    border: none;
+    border-radius: 5px;
+    background: rgba(255, 255, 255, 0.1);
+    box-shadow: inset 0 1px 2px rgba(0, 0, 0, 0.1);
+  }
+  
+  .keys {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 10px;
+  }
+  
+  .btn {
+    width: 100%;
+    height: 40px;
+    border: none;
+    border-radius: 5px;
+    background: rgba(255, 255, 255, 0.1);
+    font-size: 1.2rem;
+    cursor: pointer;
+    box-shadow: 0 1px 2px rgba(0, 0, 0, 0.1);
+    transition: all 0.3s ease;
+  }
+  
+  .btn:hover {
+    background: rgba(255, 255, 255, 0.3);
+    transform: translateY(-2px);
+  }
+  
+  .operator {
+    background: rgba(255, 255, 255, 0.3);
+  }
+  
+  @keyframes fadeInUp {
+    from {
+      opacity: 0;
+      transform: translateY(20px);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+  
+  @media (min-width: 768px) {
+    .calculator {
+      max-width: 600px;
+    }
+  }
+  
