@@ -1,4 +1,4 @@
-The Project link of Calculator : https://65f97ab01ff11fbae9ef554b--serene-scone-7d184a.netlify.app/
+The Project link of Calculator : https://65fe92f7beabdccf269ee5be--serene-scone-7d184a.netlify.app/
 
 
 
