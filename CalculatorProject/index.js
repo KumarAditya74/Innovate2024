@@ -1,3 +1,14 @@
+let calculator = document.querySelector('.calculator');
+let body = document.body;
+
+calculator.onmouseover = function() {
+  body.style.background = "linear-gradient(to bottom right, white, black)";
+  calculator.style.background = "linear-gradient(to bottom right, #61c0bf, #0088a9)";
+}
+
+calculator.onmouseleave = function() {
+  body.style.background = "linear-gradient(to bottom right, #61c0bf, #0088a9)";
+}
 let display = document.getElementById('display');
 
 function appendValue(value) {
